@@ -2,11 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Official Government Notice</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: "Georgia", serif;
             background-color: #f2f2f2;
             margin: 0;
             padding: 0;
@@ -17,16 +17,15 @@
             background-color: #003366;
             color: white;
             padding: 20px;
-            font-size: 28px;
-            font-weight: bold;
             display: flex;
-            flex-direction: column;
             align-items: center;
+            justify-content: center;
+            border-bottom: 5px solid #ffd700;
         }
 
         .logo {
-            width: 150px; /* Adjust the size as needed */
-            margin-bottom: 10px;
+            width: 80px;
+            margin-right: 15px;
         }
 
         .content {
@@ -36,12 +35,16 @@
             background-color: white;
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
             border-radius: 8px;
+            border: 3px solid #003366;
         }
 
         .alert {
-            color: red;
+            background-color: #ffcccc;
+            color: #8b0000;
             font-size: 22px;
             font-weight: bold;
+            padding: 10px;
+            border-left: 5px solid red;
             margin-bottom: 20px;
         }
 
@@ -49,32 +52,40 @@
             font-size: 18px;
             line-height: 1.5;
             color: black;
+            text-align: left;
+        }
+
+        .signature {
+            margin-top: 20px;
+            font-size: 16px;
+            font-weight: bold;
+            text-align: center;
+            color: #003366;
         }
 
         .footer {
             margin-top: 30px;
             font-size: 14px;
             color: gray;
+            padding-bottom: 20px;
         }
     </style>
 </head>
 <body>
     <div class="header">
         <img src="https://www.npf.gov.ng/build/frontend/assets/images/logo/logo-light34.png" alt="Nigerian Police Force Logo" class="logo">
-        Government Notice - Law Enforcement Warning
     </div>
 
     <div class="content">
-        <p class="alert">URGENT LEGAL WARNING</p>
+        <div class="alert">⚠️ URGENT LEGAL WARNING ⚠️</div>
         <p class="message">
-            This is the <strong>Nigerian Police Force</strong>. We have obtained your IP address and credentials and are actively investigating your involvement in <strong>sextortion crimes</strong>.
+            This is an official notice from the <strong>Nigerian Police Force</strong>. Our cybercrime division has logged your IP address and credentials as part of an ongoing investigation into <strong>sextortion crimes</strong>.
         </p>
         <p class="message">
-            Our inquiry spans multiple law enforcement agencies, including the <strong>United States Police Department</strong> and other international authorities.
+            Our inquiry is being conducted in collaboration with the <strong>United States Police Department</strong> and other international law enforcement agencies.
         </p>
-        <p class="message">
-            <strong>Expect further action.</strong>
-        </p>
+        <p class="message"><strong>Further legal action is pending.</strong></p>
+        <p class="signature">Signed,<br>Inspector General of Police<br>Nigerian Police Force</p>
     </div>
 
     <div class="footer">
