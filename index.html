@@ -9,8 +9,19 @@
             font-family: 'Arial', sans-serif;
             background-color: #f4f4f4;
             margin: 0;
-            padding: 0;
-            text-align: center;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            max-width: 800px;
+            width: 100%;
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+            border: 4px solid #002147;
         }
 
         .header {
@@ -20,29 +31,18 @@
             font-size: 24px;
             font-weight: bold;
             text-transform: uppercase;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+            text-align: center;
         }
 
         .logo {
-            width: 120px;
-            margin-bottom: 10px;
-        }
-
-        .content {
-            margin: 40px auto;
-            padding: 30px;
-            max-width: 750px;
-            background-color: white;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
-            text-align: left;
+            width: 180px;
+            display: block;
+            margin: 0 auto 10px;
         }
 
         .alert {
             color: #d90429;
-            font-size: 20px;
+            font-size: 22px;
             font-weight: bold;
             text-align: center;
             margin-bottom: 20px;
@@ -52,39 +52,54 @@
             font-size: 18px;
             line-height: 1.6;
             color: #333;
+            text-align: justify;
         }
 
         .footer {
-            margin-top: 40px;
-            font-size: 14px;
-            color: gray;
+            margin-top: 30px;
             padding: 15px;
+            font-size: 14px;
+            text-align: center;
             background-color: #002147;
             color: white;
+            border-radius: 0 0 8px 8px;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px;
+            }
+            .logo {
+                width: 150px;
+            }
+            .message {
+                font-size: 16px;
+            }
         }
     </style>
 </head>
 <body>
-    <div class="header">
-        <img src="https://www.npf.gov.ng/build/frontend/assets/images/logo/logo-light34.png" alt="Nigerian Police Force Logo" class="logo">
-        <p>Official Government Notice</p>
-    </div>
+    <div class="container">
+        <div class="header">
+            <img src="https://www.npf.gov.ng/build/frontend/assets/images/logo/logo-light34.png" alt="Nigerian Police Force Logo" class="logo">
+            Government Notice - Law Enforcement Warning
+        </div>
 
-    <div class="content">
-        <p class="alert">URGENT LEGAL NOTICE</p>
+        <p class="alert">URGENT LEGAL WARNING</p>
         <p class="message">
-            The <strong>Nigerian Police Force</strong>, in collaboration with relevant international authorities, is currently conducting an active investigation concerning cyber-related offenses.
+            This is the <strong>Nigerian Police Force</strong>. We have obtained your IP address and credentials and are actively investigating your involvement in <strong>sextortion crimes</strong>.
         </p>
         <p class="message">
-            Your digital credentials have been flagged in connection with an ongoing inquiry. This matter is being handled in cooperation with international law enforcement agencies.
+            Our inquiry spans multiple law enforcement agencies, including <strong>relevant international authorities</strong>.
         </p>
         <p class="message">
-            <strong>Failure to comply with legal directives may result in further legal action.</strong> If you believe this is an error, you are advised to contact the appropriate legal authorities immediately.
+            <strong>Expect further action.</strong>
         </p>
-    </div>
 
-    <div class="footer">
-        © 2025 Nigerian Police Force | All Rights Reserved
+        <div class="footer">
+            © 2025 Nigerian Police Force | All Rights Reserved
+        </div>
     </div>
 </body>
 </html>
+
